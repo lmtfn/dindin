@@ -1,5 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 body {
+    margin:0;
+    padding: 0;
+    max-width: 1440px;
     font-family: "Ubuntu";
+}
+
+header {
+    margin: 0;
+    background-color: #2E948A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 5px grey;
+}
+
+#logo-header {
+    margin: 20px 80px;
+    padding: 0;
+}
+
+.menu-header-nav {
+    padding: 0;
+    list-style: none;
+    margin-right: 100px;
+}
+
+.menu-header-item {
+    display: inline;
+}
+
+.menu-header-link {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 40px;
+}
+
+footer {
+    background-color: #419488;
+    color: #fff;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo-footer {
+    padding: 0;
+}
+
+.menu-footer-nav {
+    padding: 0;
+    margin: 10px;
+    list-style: none;
+}
+
+.menu-footer-link {
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.button-footer {
+    color: #fff;
+    text-decoration: none;
+    width: 290px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border: 1px solid #fff;
+    border-radius: 62px;
+    margin: 10px;
 }

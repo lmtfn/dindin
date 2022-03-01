@@ -1,0 +1,55 @@
+#class-summary {
+    display: flex;
+    margin: 90px 100px;
+}
+
+#class-summary h1 {
+    font-weight: 700;
+    font-size: 55px;
+    color: #FF4081;
+    width: 80%;
+}
+
+#class-summary p {
+    font-weight: 300;
+    font-size: 20px;
+    color: #000;
+    width: 80%;
+}
+
+#class-summary img {
+    width: 380px;
+}
+
+#lessons {
+    background-color: #F6F6F6;
+    padding-bottom: 30px;
+}
+
+.lesson {
+    display: flex;
+    padding: 75px;
+}
+
+.lesson-video {
+    margin-left: 100px;
+    height: 50px;
+}
+
+.lesson-summary {
+    margin-left: 75px;
+    margin-right: 100px;
+}
+
+.lesson-summary h2 {
+    font-weight: 700;
+    font-size: 35px;
+    color: #FF4081;
+}
+
+hr {
+    height: 3px;
+    background-color: #C4C4C4;
+    border: none;
+    width: 90%;
+}
