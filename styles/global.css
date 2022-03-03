@@ -3,17 +3,25 @@
 body {
     margin:0;
     padding: 0;
-    max-width: 1440px;
+    width: 100%;
     font-family: "Ubuntu";
 }
 
 header {
-    margin: 0;
+    margin: 0 auto;
+    width: 100%;
     background-color: #2E948A;
+    box-shadow: 0px 0px 5px grey;
+}
+
+.wrapper {
+    max-width: 1440px;
+    position: relative;
+    margin: 0 auto;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 0px 5px grey;
 }
 
 #logo-header {
@@ -78,4 +86,71 @@ footer {
     border: 1px solid #fff;
     border-radius: 62px;
     margin: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        margin: 0;
+    }
+
+    #logo-header {
+        width: auto;
+        margin: 10px;
+    }
+
+    #logo-header img {
+        width: 120px;
+    }
+
+    .wrapper {
+        width: auto;
+    }
+
+    .menu-header-nav {
+        margin: 0;
+        display: flex;
+    }
+
+    .menu-header-link {
+        margin: 8px;
+        font-size: 15px;
+    }
+
+    footer {
+        margin:0;
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+    
+    .logo-footer {
+        width: 50%;
+        margin: 10px;
+    }
+
+    .logo-footer img {
+        width: 100%;
+    }
+    
+    .menu-footer-nav {
+        margin: 0;
+        display: flex;
+    }
+    
+    .menu-footer-link {
+        margin: 8px;
+        font-size: 20px;
+    }
+    
+    .buttons-footer {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .button-footer {
+        width: auto;
+        margin: 10px;
+        padding: 0 10px;
+        font-size: 15px;
+    }
 }

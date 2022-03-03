@@ -37,7 +37,7 @@ main {
 }
 
 .classes-options img {
-    height: 380px;
+    max-height: 380px;
 }
 
 .classes-options a {
@@ -59,4 +59,36 @@ hr {
     height: 5px;
     background-color: #C4C4C4;
     border: none
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    #classes-title {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .classes-options {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 80px 0;
+    }
+
+    .classes-options div {
+        margin: 0;
+    }
+
+    .classes-options h2 {
+        font-size: 25px;
+    }
+
+    img {
+        width: 70%;
+    }
 }
