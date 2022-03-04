@@ -109,8 +109,8 @@ footer {
     .menu-header-nav {
         margin: 10px;
         display: flex;
-        flex-direction: column;
-        gap: 5px;
+        flex-direction: row;
+        gap: 3px;
     }
 
     .menu-header-link {
@@ -227,7 +227,6 @@ footer {
 }
 
 @media only screen and (min-width:768px) and (max-width: 992px) {
-    
     header {
         margin: 0;
     }

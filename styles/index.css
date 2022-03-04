@@ -245,6 +245,8 @@
 
     .feature p {
         width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
     }
 
     .feature img {
@@ -301,6 +303,7 @@
         margin-bottom: 50px;
         margin-left: 0;
         width: 90%;
+        text-align: center;
     }
 
     .content-box img {
