@@ -1,6 +1,11 @@
 #class-summary {
     display: flex;
+    justify-content: space-evenly;
     margin: 90px 100px;
+}
+
+#class-summary div {
+    width: 45%;
 }
 
 #class-summary h1 {
@@ -28,12 +33,18 @@
 
 .lesson {
     display: flex;
+    justify-content: center;
     padding: 75px;
 }
 
 .lesson-video {
     margin-left: 100px;
     height: 50px;
+}
+
+.lesson-video video {
+    width: 500px;
+    text-align: center;
 }
 
 .lesson-summary {
@@ -45,6 +56,13 @@
     font-weight: 700;
     font-size: 35px;
     color: #FF4081;
+    margin-top: 0;
+}
+
+.lesson-summary p {
+    font-weight: 300;
+    font-size: 20px;
+    color: #000;
 }
 
 hr {
@@ -54,7 +72,74 @@ hr {
     width: 90%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
+    main {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    #class-summary {
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    #class-summary div {
+        width: 100%;
+    }
+
+    #class-summary div h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #class-summary div p {
+        margin: auto;
+    }
+
+    #class-summary img {
+        display: none;
+    }
+    
+    #lessons {
+        padding: 40px;
+    }
+
+    .lesson {
+        flex-direction: column;
+        padding: 0;
+        margin: 50px 0;
+        align-items: center;
+    }
+
+    .lesson-video {
+        margin: 0;
+        height: auto;
+    }
+
+    .lesson-video video {
+        width: 250px;
+    }
+
+    .lesson-summary {
+        width: 100%;
+        margin: auto;
+    }
+    
+    .lesson-summary h2 {
+        margin-bottom: 0;
+    }
+
+    .lesson-summary p {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width: 768px) {
     main {
         text-align: center;
         width: 100%;
@@ -101,6 +186,80 @@ hr {
     .lesson-video {
         margin: 0;
         height: auto;
+    }
+
+    .lesson-video video {
+        width: 250px;
+    }
+
+    .lesson-summary {
+        width: 100%;
+        margin: auto;
+    }
+    
+    .lesson-summary h2 {
+        margin-bottom: 0;
+    }
+
+    .lesson-summary p {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width: 992px) {
+    main {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    #class-summary {
+        flex-direction: row;
+        margin: auto;
+        margin-bottom: 20px;
+        width: 100%;
+        align-items: center;
+    }
+
+    #class-summary div {
+        align-items: center;
+    }
+
+    #class-summary div h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #class-summary div p {
+        margin: auto;
+    }
+
+    #class-summary img {
+        width: 250px;
+        height: 250px;
+        margin-right: 50px;
+    }
+    
+    #lessons {
+        padding: 40px;
+    }
+
+    .lesson {
+        flex-direction: column;
+        padding: 0;
+        margin: 50px 0;
+        align-items: center;
+    }
+
+    .lesson-video {
+        margin: 0;
+        height: auto;
+    }
+
+    .lesson-video video {
+        width: 600px;
     }
 
     .lesson-summary {

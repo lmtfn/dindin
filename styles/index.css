@@ -17,6 +17,7 @@
 #summary-index-text h1 {
     color: #FF4081;
     font-size: 60px;
+    margin-bottom: 0;
 }
 
 #summary-index-text p {
@@ -46,7 +47,7 @@
     padding-top: 10px;
 }
 
-.features {
+#features {
     background-color: #F6F6F6;
     padding: 100px;
     display: flex;
@@ -190,13 +191,15 @@
     align-items: center;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
     main {
         margin: 0;
+        width: 100%;
     }
     
     #summary-index {
         margin: 0;
+        width: 100%;
         margin-bottom: 50px;
     }
 
@@ -214,11 +217,140 @@
         margin-bottom: 0;
     }
 
-    .features {
+    #learn-more {
+        font-size: 20px;
+        width: auto;
+        padding: 10px;
+    }
+
+    #features {
         flex-direction: column;
+        padding: 50px 0 0 0;
+        margin: auto;
+        align-items: center;
+    }
+
+    #features-box {
+        padding-bottom: 0px;
+    }
+
+    #features-box h1 {
+        font-size: 40px;
+    }
+
+    .feature {
+        margin-bottom: 100px;
+        width: 100%;
+    }
+
+    .feature p {
+        width: 90%;
+    }
+
+    .feature img {
+        width: 80%;
+    }
+
+    #opinions-index {
+        margin: auto;
+        padding: 0 0 50px 0;
+        width: 80%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #opinions-index h2 {
+        margin-bottom: 50px;
+    }
+
+    .opinion {
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+
+    .opinion-text p {
+        width: 100%;
+        margin: 0;
+    }
+
+    #opinion-boxes {
+        text-align: center;
+        justify-content: center;
+    }
+
+    #more-index {
         padding-top: 50px;
         padding-bottom: 0px;
+        text-align: center;
+    }
+
+    #more-index h2 {
+        margin: 0;
+        margin-bottom: 50px;
+    }
+    
+    #more-content {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .content-box {
+        margin-bottom: 50px;
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .content-box img {
+        width: 90%;
+    }
+
+    #more-posts {
+        margin-top: 0;
+    }
+
+    #more-button {
+        width: 80%;
         margin: auto;
+    }
+
+    #more-button a {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width: 768px) {
+    main {
+        margin: 0;
+        width: 100%;
+    }
+    
+    #summary-index {
+        margin: 0;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #summary-index img {
+        display: none;
+    }
+
+    #summary-index-text {
+        text-align: center;
+        align-items: center;
+    }
+
+    #summary-index-text h1 {
+        font-size: 50px;
+        margin-bottom: 0;
+    }
+
+    #features {
+        flex-direction: column;
+        padding: 50px 0 0 0;
+                margin: auto;
         align-items: center;
     }
 
@@ -275,6 +407,110 @@
     
     #more-content {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .content-box {
+        margin-bottom: 50px;
+    }
+
+    #more-posts {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width: 992px) {
+    main {
+        margin: 0;
+        width: 100%;
+    }
+    
+    #summary-index {
+        margin: 0;
+        width: 100%;
+        margin-bottom: 50px;
+        align-items: center;
+    }
+
+    #summary-index img {
+        width: 250px;
+        height: 250px;
+    }
+
+    #summary-index-text {
+        text-align: center;
+        align-items: center;
+    }
+
+    #summary-index-text h1 {
+        font-size: 50px;
+        margin-bottom: 0;
+    }
+
+    #features {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 50px 0 0 0;
+        margin: auto;
+        align-items: center;
+    }
+
+    #features-box {
+        padding-bottom: 0px;
+    }
+
+    #features-box h1 {
+        font-size: 40px;
+    }
+
+    .feature {
+        margin-bottom: 100px;
+    }
+
+    .feature img {
+        width: 80%;
+    }
+
+    #opinions-index {
+        margin: auto;
+        padding: 0 0 50px 0;
+        width: 80%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #opinions-index h2 {
+        margin-bottom: 50px;
+    }
+
+    .opinion {
+        flex-direction: column;
+        margin: 0;
+        width: 40%;
+    }
+
+    #opinion-boxes {
+        text-align: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1000px;
+    }
+
+    #more-index {
+        padding-top: 50px;
+        padding-bottom: 0px;
+        text-align: center;
+    }
+
+    #more-index h2 {
+        margin: 0;
+        margin-bottom: 50px;
+    }
+    
+    #more-content {
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
     }
 

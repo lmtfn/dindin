@@ -85,3 +85,29 @@ form input, textarea {
         display: none;
     }
 }
+
+@media only screen and (min-width:768px) and (max-width: 992px) {
+    #form-box {
+        flex-direction: row;
+        margin: 0 20px 50px 0;
+        align-items: center;
+    }
+
+    #form-box h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    main {
+        text-align: center;
+        width: 100%;
+    }
+
+    form {
+        margin: auto;
+    }
+
+    #form-box img {
+        width: 250px;
+    }
+}

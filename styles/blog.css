@@ -50,7 +50,7 @@
     color: #000;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
     main {
         text-align: center;
         width: 100%;
@@ -88,6 +88,103 @@
     
     .blog-post {
         width:90%;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .blog-post img {
+        width:100%;
+    }
+}
+
+
+@media only screen and (min-width:480px) and (max-width: 768px) {
+    main {
+        text-align: center;
+        width: 100%;
+    }
+    
+    #banner-blog {
+        margin: auto;
+        margin-bottom: 20px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #banner-blog h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    #banner-blog p {
+        margin-top: 0;
+    }
+
+    #banner-blog div {
+        width: 100%;
+    }
+
+    #banner-blog img {
+        display:none;
+    }
+
+    #blog-posts {
+        flex-direction: column;
+        padding: 40px 0;
+        align-items: center;
+    }
+    
+    .blog-post {
+        width:90%;
+        margin-bottom: 50px;
+    }
+
+    .blog-post img {
+        width:100%;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width: 992px) {
+    main {
+        text-align: center;
+        width: 100%;
+    }
+    
+    #banner-blog {
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #banner-blog h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    #banner-blog p {
+        margin-top: 0;
+    }
+
+    #banner-blog div {
+        width: 100%;
+    }
+
+    #banner-blog img {
+        width: 250px;
+    }
+
+    #blog-posts {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 40px 0;
+        align-items: center;
+    }
+    
+    .blog-post {
+        width:40%;
         margin-bottom: 50px;
     }
 

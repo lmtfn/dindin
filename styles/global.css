@@ -16,7 +16,6 @@ header {
 
 .wrapper {
     max-width: 1440px;
-    position: relative;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -24,7 +23,7 @@ header {
     align-items: center;
 }
 
-#logo-header {
+.logo-header {
     margin: 20px 80px;
     padding: 0;
 }
@@ -56,7 +55,7 @@ footer {
     align-items: center;
 }
 
-#logo-footer {
+.logo-footer {
     padding: 0;
 }
 
@@ -88,31 +87,34 @@ footer {
     margin: 10px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
     header {
         margin: 0;
+        width: 100%;
     }
 
-    #logo-header {
+    .logo-header {
         width: auto;
         margin: 10px;
     }
 
-    #logo-header img {
+    .logo-header img {
         width: 120px;
     }
 
     .wrapper {
-        width: auto;
+        justify-content: space-between;
     }
 
     .menu-header-nav {
-        margin: 0;
+        margin: 10px;
         display: flex;
+        flex-direction: column;
+        gap: 5px;
     }
 
     .menu-header-link {
-        margin: 8px;
+        margin: 5px;
         font-size: 15px;
     }
 
@@ -151,6 +153,146 @@ footer {
         width: auto;
         margin: 10px;
         padding: 0 10px;
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width: 768px) {
+    header {
+        margin: 0;
+        width: 100%;
+    }
+
+    .logo-header {
+        width: auto;
+        margin: 10px;
+    }
+
+    .logo-header img {
+        width: 120px;
+    }
+
+    .wrapper {
+        align-items: space-around;
+    }
+
+    .menu-header-nav {
+        margin: 0;
+        display: flex;
+    }
+
+    .menu-header-link {
+        margin: 5px;
+        font-size: 15px;
+    }
+
+    footer {
+        margin:0;
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+    
+    .logo-footer {
+        width: 50%;
+        margin: 10px;
+    }
+
+    .logo-footer img {
+        width: 100%;
+    }
+    
+    .menu-footer-nav {
+        margin: 0;
+        display: flex;
+    }
+    
+    .menu-footer-link {
+        margin: 8px;
+        font-size: 20px;
+    }
+    
+    .buttons-footer {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .button-footer {
+        width: auto;
+        margin: 10px;
+        padding: 0 10px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width: 992px) {
+    
+    header {
+        margin: 0;
+    }
+
+    .logo-header {
+        width: auto;
+        margin: 10px;
+    }
+
+    .logo-header img {
+        width: 200px;
+        margin: 10px 20px;
+    }
+
+    .wrapper {
+        width: auto;
+    }
+
+    .menu-header-nav {
+        margin-right: 50px;
+        display: flex;
+    }
+
+    .menu-header-link {
+        margin: 8px;
+        font-size: 15px;
+    }
+
+    footer {
+        margin:0;
+        height: 120px;
+    }
+    
+    .logo-footer {
+        width: 35%;
+        margin: 10px;
+        margin-left: 30px;
+    }
+
+    .logo-footer img {
+        width: 50%;
+    }
+    
+    .menu-footer-nav {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .menu-footer-link {
+        margin: 8px;
+        font-size: 20px;
+    }
+    
+    .buttons-footer {
+        display: flex;
+        flex-direction: row;
+        margin-left: 30px;
+    }
+
+    .button-footer {
+        width: auto;
+        height: auto;
+        margin: 10px;
+        padding: 10px 10px;
         font-size: 15px;
     }
 }

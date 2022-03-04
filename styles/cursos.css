@@ -61,7 +61,44 @@ hr {
     border: none
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
+    main {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    #classes-title {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .classes-options {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 80px 0;
+    }
+
+    .classes-options div {
+        margin: 0;
+        width: 90%;
+    }
+
+    .classes-options a {
+        margin: auto;
+    }
+
+    .classes-options h2 {
+        font-size: 25px;
+    }
+
+    img {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width: 768px) {
     main {
         text-align: center;
         width: 100%;
@@ -90,5 +127,37 @@ hr {
 
     img {
         width: 70%;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width: 992px) {
+    main {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    #classes-title {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .classes-options {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 80px 0;
+    }
+
+    .classes-options a {
+        margin: auto;
+    }
+
+    .classes-options h2 {
+        font-size: 25px;
+    }
+
+    img {
+        width: 30%;
     }
 }
